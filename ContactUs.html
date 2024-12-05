@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css"> <!--Connecting to the embedded style sheet.-->
+        <link rel="stylesheet" type="text/css" href="Navigation.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+        <!--Java Script Library-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+
+        <title> 
+            Contact Us
+        </title>
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <header class="my-header" style="z-index:1">
+            <div class="my-header-logo"> 
+                <a href="index.html"><img src="Images/MyLogo-removebg-preview.png" alt="Logo"> </a>
+            </div>
+
+            <nav class="my-header-navbar" >
+                <ul>
+                    <li><a href="ContactUs.html" class="active">Contact</a></li>
+                    <li><a href="AboutUs.html">About</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li ><a href="index.html" >Home</a></li>
+                </ul>
+            </nav>
+            
+            <div style=" display:flex; align-items: center;">
+                <ul style="list-style: none;">
+                    <li ><a href="Donate.html" class="button"> Donate</a></li>
+                    <li ><a href="SignIn.html" class="button"> Sign In</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--Navigation bar close-->
+
+        <main style="padding-top: 8vh;">
+            <section class="col" style="align-items:center;">
+                <h1 class="heading" style="padding-bottom:1rem;">Contact Us</h1>
+                <p>Please leave a message for us to get back to you.</p>
+            </section>
+            <div class="form-sec" style="display: flex;flex-direction: row;"> 
+                
+                <form class="Myform" > 
+                    <!--First Name -->
+                    <div class="form-div">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="Joe">
+                    </div>
+                    <!-- Second Name -->
+                    <div class="form-div">
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Biden">
+                    </div>
+                    <!--Email Id-->
+                    <div class="form-div">
+                        <label for="email">Email Id: </label>
+                    <input type="text" id="email" name="email" placeholder="jbiden@gmail.com">
+                    </div>
+                    
+                    <!--Message box-->
+                    <div class="form-message" >
+                        <label> Leave your message:</label>
+                        <br><br>
+                        <textarea name="message" cols="45" rows="6" placeholder="  Write a message.."></textarea>
+                        <br><br>
+                    </div>
+
+                    <div class="create">
+                        <input type="button" onclick="alert('Thank you for your message!')" value="Submit">
+                    </div>
+                </form>
+                <div>
+                    <img src="Images/contact.jpg" alt="Contct us image">
+                </div>
+            </div>
+
+            <div class="col" style="align-items:center;">
+                <p class="heading" style="padding-bottom:1rem;">Our Branches</p>
+                <p>Get in touch with us by contacting any of our branches.</p>
+            </div>
+            <!--Section 1: Branch London-->
+            <div class="row hsec-style odd-sec" data-aos="fade-right" time-duration="3000">
+                <div>
+                    <img src="Images/London.jpg" alt="London">
+                </div>
+                <div>
+                    <p class="sub-heading">London</p>
+                    <p>
+                        Our London branch serves as the central hub for our operations in the bustling capital city. Located in the heart of London, our dedicated team is committed to providing comprehensive support and assistance to our community members. Reach out to us for any inquiries, support, or information. 
+                        <br>
+                        <strong>Contact us at </strong> +44 20 1234 5678
+                        <br>
+                        <strong>Email</strong> <i><a class="link" href="mailto:londonbranch@treasure.com">londonbranch@treasure.com</a></i> for prompt assistance.
+                    </p>
+                </div>
+            </div>
+            <!--Section 2: Branch Birmingham-->
+            <div class="row hsec-style even-sec" data-aos="fade-left" time-duration="3000">
+                <div>
+                    <p class="sub-heading">Birmingham</p>
+                    <p>
+                        Nestled in the vibrant city of Birmingham, our branch is dedicated to serving the needs of our community members in the West Midlands region. With a focus on accessibility and responsiveness, our team is here to address your inquiries and provide assistance whenever needed.
+                        <br>
+                        <strong>Contact us at </strong> +44 121 9876 5432
+                        <br>
+                        <strong>Email</strong> <i><a class="link" href="mailto:birminghambranch@treasure.com">birminghambranch@treasure.com</a></i> for responsive service and support.
+                    </p>
+                </div>
+                <div>
+                    <img src="Images/birmingham.jpg" alt="Birmingham ">
+                </div>
+            </div>
+            <!--Section 3: Branch Manchester-->
+            <div class="row hsec-style odd-sec" data-aos="fade-right" time-duration="3000">
+                <div>
+                    <img src="Images/Manchester.jpg" alt="Manchester">
+                </div>
+                <div>
+                    <p class="sub-heading">Manchester</p>
+                    <p>
+                        Our Manchester branch caters to the needs of individuals and families in the dynamic city of Manchester and its surrounding areas. With a commitment to excellence and customer satisfaction, our team is ready to assist you with any inquiries or concerns you may have.
+                        <br>
+                        <strong>Contact us at </strong> +44 161 8765 4321
+                        <br>
+                        <strong>Email</strong> <i><a class="link" href="mailto:birminghambranch@treasure.com">manchesterbranch@treasure.com</a></i> for prompt assistance and support.
+                    </p>
+                </div>
+            </div>
+            <!--SOCIAL MEDIA -->
+            <div style="display:flex; flex-direction: column; align-items:center;">
+                <p class="heading" style="padding-bottom:1rem;">Social Media</p>
+                <p>Follow us on social media through the given information.</p>
+            </div>
+            <div class="row" style="justify-content: space-evenly;">
+                <div class="social">
+                    <a href="https://www.facebook.com/">
+                        <img style="border: none;" src="Images/Facebook.png" alt="Facebook">
+                    </a>
+                    <h4>Facebook</h4>
+                </div>
+                <div class="social">
+                    <a href="https://www.whatsapp.com/">
+                        <img style="border: none;" src="Images/whatsapp.png" alt="WhatsApp">
+                    </a>
+                    <h4>WhatsApp</h4>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/">
+                        <img style="border: none;" src="Images/instagram.png" alt="Instagram">
+                    </a>
+                    <h4>Instagram</h4>
+                </div>
+                <div class="social">
+                    <a href="https://twitter.com/">
+                        <img style="border: none;" src="Images/Twitter.png" alt="Twitter">
+                    </a>
+                    <h4>Twitter</h4>
+                </div>
+                <div class="social">
+                    <a href="https://www.youtube.com/">
+                        <img style="border: none;" src="Images/Youtube.png" alt="YouTube">
+                    </a>
+                    <h4>YouTube</h4>
+                </div>
+
+            </div>
+            
+        </main>
+
+        <!--Footer-->
+        <footer class="my-lobely-footerr">
+            <div class="footer-2">
+                <div class="sub-footer" >
+                    <h3>Popular Links</h3>
+                        <ul >
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Events.html">Events</a> </li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                        </ul>
+                </div>
+                <div class="sub-footer" >
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="Donate.html">Donate</a></li>
+                            <li><a href="SignIn.html">Join Us</a></li>
+                        </ul>
+                </div>
+                <div class="sub-footer" >
+                        <h3>Others</h3>
+                        <ul>
+                            <li><a href="Construction.html">Terms&Conditions</a></li>
+                            <li><a href="Construction.html">Cookies</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright@2024 Jasmi
+            </div>
+            
+        
+    </footer>
+        <!--End of footer-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

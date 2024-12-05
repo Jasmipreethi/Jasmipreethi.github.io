@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="Navigation.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+        <link rel="stylesheet" type="text/css" href="FormDesign.css">
+        <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+        <title>
+            Sign in page
+        </title>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <!--Navigation menu-->
+        <header class="my-header" style="z-index:1">
+            <div class="my-header-logo"> 
+                <a href="index.html"><img src="Images/MyLogo-removebg-preview.png" alt="Logo"> </a>
+            </div>
+
+            <nav class="my-header-navbar" >
+                <ul>
+                    <li><a href="ContactUs.html">Contact</a></li>
+                    <li><a href="AboutUs.html">About</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li ><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+            
+            <div style=" display:flex; align-items: center;">
+                <ul style="list-style: none;">
+                    <li ><a href="Donate.html" class="button"> Donate</a></li>
+                    <li ><a href="SignIn.html" class="button"> Sign In</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--Main content-->
+        <main style="padding-top: 8vh">
+            <section > <!--Heading section-->
+                <h1 class="heading" style="display: flex; justify-content: center;">Sign In</h1>
+            </section>
+
+            <!--Form section-->
+
+            <div class="form-sec" style="display: flex;flex-direction: row;"> 
+                <form class="Myform" > 
+                    <!--First Name -->
+                    <div class="form-div">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="Joe">
+                    </div>
+                    <!-- Second Name -->
+                    <div class="form-div">
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Biden">
+                    </div>
+
+                    <!--Age-->
+                    <div class="form-div">
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday">
+                    </div>
+                    
+                    <!--Email Id-->
+                    <div class="form-div">
+                        <label for="email">Email Id: </label>
+                        <input type="text" id="email" name="email" placeholder="jbiden@gmail.com">
+                    </div>
+                    <!--Password-->
+                    <div class="form-div">
+                        <label for="pass">Password: </label>
+                    <input type="password" id="pass" name="pass" placeholder="Type your password">
+                    </div>
+        
+                    <!--Gender Radiobox-->
+                    <div class="form-radio">
+                        <label>Gender: </label>
+                    <input type="radio" id="male" name="gender" value="Male" >
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                    </div>
+
+                    <div class="form-select">
+                    <!--Blood group droopdown menu-->
+                    <label for="blood-group">Select your blood group:</label>
+                    <select name="blood-group" id="blood-group">
+                        <option selected>Your blood type</option>
+                        <option value="Ap">A-positive</option>
+                        <option value="Bp">B-positive</option>
+                        <option value="ABp">AB-positive</option>
+                        <option value="O">O-positive</option>
+                        <option value="An">A-negative</option>
+                        <option value="Bn">B-negative</option>
+                        <option value="ABn">AB-negative</option>
+                        <option value="On">O-negative</option>
+                    </select>
+                    </div>
+                    <!-- <br><br>  -->
+                    <div class="create">
+                        <!-- <br><br>  -->
+                        <input type="button" onclick="alert('Thank you for joining us!')" value="Sign up">
+                    </div>
+                    
+                </form>
+            <!--Image on the right-->
+                <div>
+                    <img src="Images/SignIn.jpg" alt="An image depicting siging up">
+                </div>
+            </div>
+        </main>
+        
+        <!--Footer -->
+        <footer class="my-lobely-footerr">
+            <div class="footer-2">
+                <div class="sub-footer" >
+                    <h3>Popular Links</h3>
+                        <ul >
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Events.html">Events</a> </li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                        </ul>
+                </div>
+                <div class="sub-footer" >
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="Donate.html">Donate</a></li>
+                            <li><a href="SignIn.html">Join Us</a></li>
+                        </ul>
+                </div>
+                <div class="sub-footer" >
+                        <h3>Others</h3>
+                        <ul>
+                            <li><a href="Construction.html">Terms&Conditions</a></li>
+                            <li><a href="Construction.html">Cookies</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright@2024 Jasmi
+            </div>
+            
+        
+    </footer>
+    </body>
+</html>

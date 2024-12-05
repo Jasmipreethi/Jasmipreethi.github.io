@@ -1,0 +1,51 @@
+@import url("index.css");
+/*FOOTER STYLE*/
+
+.my-lobely-footerr
+{
+    background-color: var(--primary_color);
+    height: 50vh;
+    width: 100%;
+    color:var(--text_brown);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 0;
+    padding: 2vw;
+    text-decoration: none;
+    
+}
+.footer-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.copyright{
+  text-align: center;
+}
+
+.sub-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.sub-footer h3{
+  padding: 1.5rem 0.25rem;
+  
+}
+/* .sub-footer ul{
+  text-decoration: none;
+} */
+.sub-footer ul li{
+  padding: 0.25rem;
+}
+.sub-footer ul li a{
+  text-decoration: none;
+  color: var(--text_brown);
+}
+
+.sub-footer ul li a:hover{
+  color:var(--activecolor);
+  
+}

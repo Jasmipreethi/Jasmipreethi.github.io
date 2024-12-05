@@ -1,11 +1,329 @@
-<!DOCTYPE html>
-<html>
-  <head> 
-    <title> My page</title>
-  </head>
-  <body>
-    <h1>
-      This is my page.
-    </h1>
-  </body>
+<!DOCTYPE html> <!-- The document type is HTML-->
+<html lang="en">
+    <!--The code for the webpage.-->
+    <head>
+        <!--The title of the page.-->
+        <title> 
+            Homepage
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="index.css"> <!--Connecting to the extenal stylesheet.-->
+        <link rel="stylesheet" type="text/css" href="Navigation.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+        <!--Java Script Library-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+        <style> 
+        td img{
+            width:50px;
+            height: 60px;
+        }
+        table{
+            margin:2rem 0.5rem;
+            padding: 0.5rem;
+            
+        }
+        table img{
+            margin-left:25%;
+        }
+        table td{
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 0.5rem;
+            /* margin: 0rem 0.5rem; */
+        }
+        .text{
+            font-size: larger;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <!--Navigation menu-->
+        <header class="my-header" style="z-index:1">
+            <div class="my-header-logo"> 
+                <a href="index.html"><img src="Images/MyLogo.jpg" alt="Logo"> </a>
+            </div>
+
+            <nav class="my-header-navbar" >
+                <ul>
+                    <li><a href="ContactUs.html">Contact</a></li>
+                    <li><a href="AboutUs.html">About</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li ><a href="index.html" class="active">Home</a></li>
+                </ul>
+            </nav>
+            
+            <div style=" display:flex; align-items: center;">
+                <ul style="list-style: none;">
+                    <li ><a href="Donate.html" class="button"> Donate</a></li>
+                    <li ><a href="SignIn.html" class="button"> Sign In</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <!--Main menu-->
+            <!-- carousal code -->
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div
+                        id="slide-1"
+                        class="slide"
+                        style="
+                        background-image: url(Images/Homepage/Slide-1.jpg);">
+                        <div style= "right:-20%; position: relative; height: 100vh; width: 50vw; transform: translateX(50%);" >
+                            <p style="margin-top:20%; font-size:80px; color:  #800000;">
+                                Welcome to TREASURE!
+                            </p>
+                            <p style="font-size: larger; margin-top: 5%;">
+                                The blood you donate is a valuable <strong style="color: #800000;"><i>TRREASURE</i></strong> for us!
+                                <br>
+                                The reciever of this kind act of yours will <strong style="color: #800000;"><i>TRREASURE</i></strong> for us! it forever!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="slide-2"
+                        class="slide"
+                        style="
+                        background-image: url(Images/Cup.jpg);">
+                        <div style="right:20%;position:relative; height:100vh; width: 50vw; transform: translateX(50%);color:#e7d9d8">
+                            <p style="font-size:4rem; ">
+                                Become the next member of the <strong>Diamond Club.</strong>
+                            </p>
+                                <ul>
+                                    <li>Be an active member of our events.</li>
+                                    <li>Be a consistant donor.</li>
+                                </ul>
+                                By being an active member of the events hosted by the 'Treasure Campagin' and being a consistant donor become a member of the <a href="Events.html" class="link"><strong><i>DIAMOND CLUB</i></strong></a>.
+
+                        </div>
+
+                    </div>
+
+                    <div id="slide-3"
+                        class="slide"
+                        style="background-image: url(Images/Homepage/Slide-3.jpg);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;" >
+                        
+                        <a class="donate_btn" href="Donate.html" >
+                             Donate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dots">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+            <!-- End of carousel -->
+        </main>
+        <!--Section 1: Why should you?-->
+        <section class="hsec-style odd-sec" data-aos="fade-right" time-duration="3000" >
+            <h1 class="heading">Why should you?</h1>
+            <p class="text">Find out why you should be a donor.</p>
+            <ul class="nested-list"> <!--Nested list-->
+                <li><h1>Your benefits</h1></li>
+                <li>
+                    <ol>
+                        <li >Regular blood donation can 
+                            <strong>lower the risk of cancer</strong> by reducing excess iron levels in the body, which may otherwise contribute to oxidative damage and cancer development.
+                        </li>
+                        <li>
+                            Blood donation helps maintain healthy blood flow and <strong>reduces the risk of cardiovascular diseases</strong>, including heart attacks and strokes, by regulating iron levels and preventing the buildup of harmful substances in the blood.
+                        </li>
+                        <li>
+                            Donating blood stimulates the production of new blood cells, which <strong>improves overall blood circulation </strong> and oxygen transport throughout the body, promoting better health and vitality.
+                        </li>
+                        <li>
+                            Blood donation helps regulate iron levels in the body, <strong>reducing the risk of</strong> iron overload conditions such as <strong>hemochromatosis,</strong> which can lead to organ damage and other serious health complications.
+                        </li>
+                        <li>
+                            Donating blood <strong> burns approximately 650 calories per pint donated</strong>, providing a passive way to contribute to weight management and calorie expenditure while benefiting others through blood donation.
+                        </li>
+                        <li>
+                            Before donating blood, individuals undergo a thorough health screening process, including tests for blood pressure, hemoglobin levels, and infectious diseases, providing <strong>an opportunity for early detection and monitoring of health conditions</strong>.
+                        </li>
+                    </ol>
+                </li>
+                <li><h1>Our benefits</h1></li>
+                <li>
+                    <ol>
+                        <li >
+                            Each blood donation becomes <strong>a crucial resource</strong>
+                             that aids patients in medical emergencies, undergoing surgeries, recovering from accidents, or managing chronic illnesses.   
+                        </li>
+                        <li>
+                            <strong>Minimize healthcare costs</strong> by providing access to donated blood instead of purchasing it from commercial suppliers.This cost-saving measure allows us to allocate more resources to vital services such as medical treatments, patient care, and community outreach initiatives. 
+                        </li>
+                        <li>
+                            Blood donation events organized by us <strong>raise awareness about the importance of donating blood</strong> and its significant impact on individuals' lives. These events educate the public about the urgent need for blood donations and encourage more people to participate in this lifesaving act of altruism. 
+                    </li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <!--Section 2: Know your blood group-->
+        <section class="hsec-style even-sec" data-aos="fade-left" time-duration="3000"> <!--Section 1-->
+            <p class="heading"> Know your blood group</p>
+            <p class="text"> Do you know your blood group?<br> Let us find out some fun facts about you based on your blood group!<p>
+                <!--TABLE-->
+                <table style="width:100%">
+                    <tr> <!--Row 1-->
+                        <th colspan="4" class="sub-heading">
+                            Rh factor +ve
+                        </th>
+                    </tr>
+                    <tr> <!--Row 2-->
+                        <td> <img src="Images/Homepage/A.png" alt="A-positive"> <p>Individuals with blood type A positive can donate red blood cells to A-positive, AB-positive, A-negative, and AB-negative recipients.</p> </td>
+                        <td> <img src="Images/Homepage/B.png" alt="B-positive"> <p>Blood type B positive is prevalent in areas such as Asia and parts of Africa, where it is estimated to occur in around 30% of the population.</p> </td>
+                        <td> <img src="Images/Homepage/AB.png" alt="AB-positive"> <p>Blood type AB positive is sometimes called the "universal recipient" because individuals with this blood type can receive red blood cells from donors with any blood type, making them versatile in transfusion scenarios.</p> </td>
+                        <td> <img src="Images/Homepage/O.png" alt="O-positive"> <p>Blood type O positive is the most common blood type, occurring in approximately 37% of the population, and is often in high demand for blood transfusions due to its versatility as a donor.</p> </td>
+                    </tr>
+                    
+                    <tr> <!--Row 3-->
+                        <th colspan="4" class="sub-heading">
+                            Rh factor -ve
+                        </th>
+                    </tr>
+                    <tr> <!--Row 4-->
+                        <td> <img src="Images/Homepage/A.png" alt="A-negative"> <p>People with blood type A negative are often considered "universal plasma donors" because their plasma can be transfused into recipients with any blood type, making it valuable in emergency situations.</p> </td>
+                        <td> <img src="Images/Homepage/B.png" alt="B-negative"> <p>Individuals with blood type B negative are encouraged to donate blood regularly, as B-negative blood is relatively rare and in high demand for transfusions, especially in emergencies.</p> </td>
+                        <td> <img src="Images/Homepage/AB.png" alt="AB-negative"> <p>AB-negative individuals can receive red blood cells from donors with A-negative, B-negative, AB-negative, and O-negative blood types, making them highly adaptable to various donor options.</p> </td>
+                        <td> <img src="Images/Homepage/O.png" alt="O-negative"> <p>People with blood type O negative are often referred to as "universal donors" because their blood can be transfused into recipients with any blood type without causing adverse reactions, making it invaluable in emergency situations.</p> </td>
+                    </tr>
+                </table>
+                <p class="text"> The Rh factor, or Rhesus factor, is a protein found on the surface of red blood cells. Individuals can be Rh-positive (+) or Rh-negative (-) based on the presence or absence of this protein. Rh factor is significant in blood transfusions. If an Rh-negative person receives Rh-positive blood their immune system may produce antibodies, leading to transfusion reactions. Rh-negative individuals may receive Rh-immune globulin injections to prevent antibody formation. Screening for Rh factor ensures compatibility between blood donors and recipients during transfusions.<p>
+        </section>
+
+        <!--Section 3: can you-->
+        <section class="hsec-style odd-sec" data-aos="fade-right" time-duration="3000" >
+            <h1 class="heading">Can you?</h1>
+            <p class="text">Find out if you can donate blood.</p>
+            <ul class="nested-list">
+                <li><h1>Yes, you can donate!</h1></li>
+                <li>
+                    <ol>
+                        <li>
+                            Blood donation eligibility typically includes individuals aged 17 to 65 years old, weighing at least 110 pounds, in good health with acceptable hemoglobin levels.
+                        </li>
+                        <li>
+                            Those with stable health conditions like controlled hypertension or diabetes may also be eligible. 
+                        </li>
+                    </ol>
+                </li>
+                <li><h1>Oops! You can't.</h1></li>
+                <li>
+                    <ol>
+                        <li >
+                            Individuals with certain medical conditions like HIV/AIDS, hepatitis, or active infections. 
+                        </li>
+                        <li>
+                            Individuals who have recently undergone major surgery, are pregnant, or have engaged in high-risk behaviors, may be ineligible to donate blood.
+                        </li>
+                        <li>
+                            Individuals with low hemoglobin levels
+                        </li>
+                        <li >
+                            Individuals with recent travel to high risk areas.
+                        </li>
+                        <li>
+                            Individuals with a history of certain medical treatments or transfusions may be deferred from donating until they meet specific criteria or waiting periods.
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <p class="text">Do you think you can be donor? If yes, do not hesitate to <a href="SignIn.html" class="link">join us</a> and <a href="Donate.html" class="link">donate</a>.</p>
+        </section>
+        <!--Section 4: What next-->
+        <section class="hsec-style even-sec" data-aos="fade-left" time-duration="3000"> 
+            <p class="heading"> What next?</p>
+            <p class="text"> Find out what you should be doing after a blood donation.</p>
+            <ul class="nested-list">
+                <li><h1>Do's</h1></li>
+                <li>
+                    <ol>
+                        <li>
+                            Drink plenty of fluids, preferably water or juice, to help replenish lost fluids and prevent dehydration after donating blood.
+                        </li>
+                        <li>
+                            Take it easy for the rest of the day after donating blood. Avoid strenuous activities or heavy lifting to allow your body time to recover.
+                        </li>
+                        <li>
+                            Consume iron-rich foods such as lean meats, leafy green vegetables, beans, and fortified cereals to help replenish iron levels in your body.
+                        </li>
+                        <li>
+                            Pay attention to any signs of lightheadedness, dizziness, or weakness after donating blood. If you experience any discomfort, sit or lie down immediately and inform the staff at the donation center.
+                        </li>
+                        <li>
+                            Adhere to any specific instructions provided by the donation center, such as avoiding alcohol consumption or taking certain medications, to ensure a smooth recovery process.
+                        </li>
+                    </ol>
+                </li>
+                <li><h1>Don'ts</h1></li>
+                <li>
+                    <ol>
+                        <li >
+                            Refrain from engaging in vigorous exercise, heavy lifting, or strenuous activities for at least a few hours after donating blood to prevent dizziness or fainting.
+                        </li>
+                        <li>
+                            Avoid smoking or exposure to secondhand smoke for a few hours after donating blood, as smoking can interfere with the oxygen-carrying capacity of your blood and may cause discomfort.
+
+                        </li>
+                        <li>
+                            Maintain a balanced diet and avoid skipping meals after donating blood. Eating regular, nutritious meals helps replenish energy levels and promotes overall well-being.
+                        </li>
+                        <li >
+                            If you feel lightheaded or dizzy after donating blood, refrain from driving or operating heavy machinery until you feel fully recovered and alert.
+                        </li>
+                        <li>
+                            Keep the bandage on your arm for at least a few hours after donating blood to prevent bleeding or bruising. If bleeding persists after removing the bandage, apply pressure to the site and seek medical attention if necessary.
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <!--Footer-->
+        <footer class="my-lobely-footerr">
+            <div class="footer-2">
+                <div class="sub-footer">
+                    <h3>Popular Links</h3>
+                        <ul >
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Events.html">Events</a> </li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                        </ul>
+                </div>
+                <div class="sub-footer" >
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="Donate.html">Donate</a></li>
+                            <li><a href="SignIn.html">Join Us</a></li>
+                        </ul>
+                </div>
+                <div class="sub-footer" >
+                        <h3>Others</h3>
+                        <ul>
+                            <li><a href="Construction.html">Terms&Conditions</a></li>
+                            <li><a href="Construction.html">Cookies</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright@2024 Jasmi
+            </div>
+            
+        
+    </footer>
+        <!--Footer end-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>
